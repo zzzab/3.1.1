@@ -2,13 +2,13 @@ package ru.springBoot311.dao;
 
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 import ru.springBoot311.models.User;
 
 import java.util.List;
 
 
-@Component
+@Repository
 public class UserDAOImpl implements UserDAO {
     @PersistenceContext
     private EntityManager entityManager;
